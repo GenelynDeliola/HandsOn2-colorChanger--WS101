@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>colorChanger()</title>
+    <style>
+        body {
+            background-color: #FAF8F6;
+            text-align: left;
+            padding: 15px;
+        }
+        h1 {
+            background-color: #94AF9F;
+            border-radius: 10px;
+            color: #FAF8F6;
+        }
+        #square {
+            background-color: green;        
+            width: 200px;
+            height: 200px;
+        }
+        button {
+            margin-top: 15px;
+            width: 140px;
+            background-color: #94AF9F;
+            border-radius: 10px;
+            color: #FAF8F6;
+        }
+            
+           
+    </style>
+</head>
+<body>
+    <h1>JavaScript colorChanger() Hands-On. </h1>
+    <div id="square"></div>
+    <button id="pinduti"><h4>Click Me</h4></button>
+    
+    <script>
+        const square = document.getElementById("square");
+        let pinduti = document.getElementById("pinduti");
+
+        pinduti.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (square.style.backgroundColor === "blue") {
+                square.style.backgroundColor = "green";
+            } else {
+                square.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+</body>
+</html>
